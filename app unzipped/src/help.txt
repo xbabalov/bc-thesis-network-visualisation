@@ -1,0 +1,28 @@
+<b>Welcome. </b>
+<br>
+<br>
+You can search for either code or name of a substance. 
+<br>
+If searched substance exists in the database it will show up as the current node and it's neighbours in the select list below. After searching or swapping it might take a bit to find all neighbours.
+<br>
+You can simply swap your current node for selected neighbour or back to the previous node by clicking on given swap buttons.
+<br>
+<br>
+Button <b>Draw current</b> will render the graph revolving around your currently selected node. Please be patient, as the graph rendering might take a while sometimes.
+<br>
+You can choose the number of rendered neighbours with <b>Change limit</b> but with too many relations the graph can become unreadable and cluttered or take a long time to render. With an extremely high number the application might crash. The recommended limit is 10-25 nodes.
+<br>
+For Indication and Side effect substance types the limit will affect directly all neighbours, for Drugs it will directly affect the number of side effects and limit for indications will be halved.
+<br>
+When limiting Side effects and Indications to relation to the current Drug node, the selection is affected by their relevancy in the graph, and the bigger the size of the node the higher the relevancy it has.
+<br>
+<br>
+Graph scheme depends on what substance is currently selected
+<br>
+<b>Indication: </b><br>
+[yellow node = indication] <- [blue node = drug] <br>
+<b>Side effect: </b><br>
+[yellow node = side effect] <- [blue node = drug] <br>
+<b>Drug: </b><br>
+[blue node = drug] -> [yellow node = side effect] <br>
+[blue node = drug] -> [red node = indication] <br>
